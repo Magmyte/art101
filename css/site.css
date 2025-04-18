@@ -10,6 +10,7 @@ body {
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
   font-family: sans-serif;
+  color: black;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -19,18 +20,22 @@ h1 {
   font-size: 200%;
 }
 
+p {
+ color: black;
+}
+
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  border: solid 3px #888;
+  background-color: #f5a843;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
+  border: solid 3px #888;
+  background-color: #fdf7bd;
 }
