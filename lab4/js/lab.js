@@ -1,7 +1,7 @@
 // Minesweeper
 // An implementation of the game
 // Kimiko Yamaguchi & Charles Haiwen
-//17 April 2024
+// 17 April 2025
 
 // Pseudocode for Minesweeper:
 
