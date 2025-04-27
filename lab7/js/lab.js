@@ -3,16 +3,16 @@
 // 26 April 2025
 
 // initiatize variables
-var myTransport = ["car", "Santa Cruz Metro"];
+var myTransport = ["Nissan skyline", "Santa Cruz Metro"];
 
 //create object
 myMainRide = {
-  make: "Ford",
-  model: "fiesta",
-  color: "white",
-  year: 2015,
+  make: "Nissan",
+  model: "Skyline",
+  color: "red",
+  year: 1995,
   age: function() {
-    return 2025 - this.year;
+    return 2025 - year;
   }
 }
 
