@@ -1,5 +1,5 @@
 // Lab 6 Assignment
-// Charles Haiwen & 
+// Charles Haiwen & Nicole Maldonado
 // 26 April 2025
 
 // initiatize variables
