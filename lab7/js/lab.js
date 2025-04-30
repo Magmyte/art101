@@ -3,7 +3,8 @@
 // 30 April 2025
 
 //initialize the variable
-var userName = window.prompt("Hello. Please tell me your name so I can sort it.");
+var userName;
+userName = window.prompt("Hello. Please tell me your name so I can sort it.");
 
 // function to sort a name alphabetically
 function sortUserName(userName) {
@@ -78,4 +79,4 @@ function shuffle(array) {
 document.writeln("Here's your sorted name: ", sortUserName(userName), "<br>");
 document.writeln("And another one: ", sortUserName1(userName), "<br>");
 document.writeln("And again: ", sortUserName2(userName), "<br>");
-document.writeln("And one more time for good measure: ", sortUserName3(userName), "</br>");
+document.writeln("And one more time for good measure: <div id=\"funnyName\">", sortUserName3(userName), "</div></br>");
