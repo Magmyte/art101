@@ -27,4 +27,7 @@ var result2 = arr.map(function(inputVar) {
 console.log("The array with every number added to 1: ", result2);
 
 // use jQuery to select the element by its ID and set the HTML content
-$("#output").html("The basic array: ", arr, "<br>The array with square numbers: ", result1, "<br>The array with every number added to 1: ", result2, "</br>");
+var finalResult = "The basic array: ";
+finalResult = finalResult.concat(arr).concat("<br>The array with square numbers: ").concat(result1).concat("<br>The array with every number added to 1: ").concat(result2).concat("</br>");
+
+$("#output").html(finalResult);
