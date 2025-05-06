@@ -1,5 +1,5 @@
 // Lab 8 Assignment
-// Charles Haiwen & 
+// Charles Haiwen & Austin Allen
 // 30 April 2025
 
 // initiatize variables
