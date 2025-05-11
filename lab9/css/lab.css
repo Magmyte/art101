@@ -7,3 +7,10 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  .special {
+    background-color: violet;
+    border: dotted 50px red;
+    color: beige;
+    font-weight: bold;
+}

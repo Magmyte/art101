@@ -1,21 +1,18 @@
-// Lab 6 Assignment
-// Charles Haiwen & 
-// 26 April 2025
+/*
+   lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
 
-// initiatize variables
-var myTransport = ["Nissan skyline", "Santa Cruz Metro"];
+   Requirements: jQuery must be loaded for this script to work.
 
-//create object
-myMainRide = {
-  make: "Nissan",
-  model: "Skyline",
-  color: "red",
-  year: 1995,
-  age: function() {
-    return 2025 - year;
-  }
-}
+   Lab 9 Assignment
+   Author: Charles Haiwen & Austin Allen
+   Date: 10 May 2025
+*/
 
-//output
-document.writeln("Kinds of transportation I use: " + myTransport + "<br>");
-document.writeln("My Main Ride: <pre>", JSON.stringify(myMainRide, null, '\t'), "</pre>");
+// add button to each section
+$(".button-press").append("<button class='button-challenge'>Make Special</button>");
+
+// add a click listener to the button
+$(".button-challenge").click(function(){
+  // now add (or subtract) the "special" class to the section
+  $(this).parent().toggleClass("special");
+});
