@@ -1,0 +1,19 @@
+{
+	"Superheroes" : 
+	[
+		{
+			"name" : "Batman",
+			"realName" : "Bruce Wayne",
+			"isAlive" : true,
+            "superpowers": ["is rich", "is smart", "is physically trained"],
+            "parentsAlive": [false, false]
+		},
+		{
+			"name" : "Superman",
+			"realName" : "Clark Kent",
+			"isAlive" : true,
+            "superpowers": ["is strong", "is fast", "is made of steel"],
+            "parentsAlive": [true, true]
+		}
+	]
+}
