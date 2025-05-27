@@ -3,11 +3,14 @@
 // 26 May 2025
 
 // initialize variables
-var factor1, factor2, factor3, factor4, phrase1, phrase2, phrase3, phrase4, outputStr;
+var factor1, factor2, factor3, factor4, maxNum, phrase1, phrase2, phrase3, phrase4, outputStr;
 factor1 = 3;
 factor2 = 4;
 factor3 = 5;
 factor4 = 7;
+
+maxNum = 99;
+
 phrase1 = "Fizz";
 phrase2 = "Buzz";
 phrase3 = "Boom";
@@ -25,9 +28,11 @@ $("#button").click(function () {
     phrase3 = $("#inputText3").val();
     phrase4 = $("#inputText4").val();
 
+    maxNum = $("#inputNumMax").val();
+
     outputStr = "";
 
-    for (i = 0; i < 100; i++) {
+    for (i = 0; i < maxNum+1; i++) {
         outputStr += i;
         var firstPass = true;
         if (i % factor1 == 0 && factor1 > 0) {
