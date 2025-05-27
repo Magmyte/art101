@@ -14,25 +14,25 @@ maxNum = 99;
 phrase1 = "Fizz";
 phrase2 = "Buzz";
 phrase3 = "Boom";
-phrase4 = "Bang";Z
+phrase4 = "Bang";
 
 $("#button").click(function () {
 
-    factor1 = $("#inputNum1").val();
-    factor2 = $("#inputNum2").val();
-    factor3 = $("#inputNum3").val();
-    factor4 = $("#inputNum4").val();
+    factor1 = parseInt($("#inputNum1").val());
+    factor2 = parseInt($("#inputNum2").val());
+    factor3 = parseInt($("#inputNum3").val());
+    factor4 = parseInt($("#inputNum4").val());
 
     phrase1 = $("#inputText1").val();
     phrase2 = $("#inputText2").val();
     phrase3 = $("#inputText3").val();
     phrase4 = $("#inputText4").val();
 
-    maxNum = $("#inputNumMax").val();
+    maxNum = parseInt($("#inputNumMax").val()) + 1;
 
     outputStr = "";
 
-    for (i = 0; i < maxNum+1; i++) {
+    for (var i = 0; i < maxNum; i++) {
         outputStr += i;
         var firstPass = true;
         if (i % factor1 == 0 && factor1 > 0) {
