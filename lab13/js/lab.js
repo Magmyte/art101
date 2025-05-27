@@ -1,13 +1,69 @@
 // Lab 13 Assignment
 // Charles Haiwen & Austin Allen
-// 24 May 2025
+// 26 May 2025
 
-fetch("./objects.json")
-.then(response => {
-       if (!response.ok) {
-           throw new Error("HTTP error " + response.status);
-       }
-       return response.json();
-   })
-.then(res => res.json())
-.then((json) => console.log(json));
+// initialize variables
+var factor1, factor2, factor3, factor4, phrase1, phrase2, phrase3, phrase4, outputStr;
+factor1 = 3;
+factor2 = 4;
+factor3 = 5;
+factor4 = 7;
+phrase1 = "Fizz";
+phrase2 = "Buzz";
+phrase3 = "Boom";
+phrase4 = "Bang";Z
+
+$("#button").click(function () {
+
+    factor1 = $("#inputNum1").val();
+    factor2 = $("#inputNum2").val();
+    factor3 = $("#inputNum3").val();
+    factor4 = $("#inputNum4").val();
+
+    phrase1 = $("#inputText1").val();
+    phrase2 = $("#inputText2").val();
+    phrase3 = $("#inputText3").val();
+    phrase4 = $("#inputText4").val();
+
+    outputStr = "";
+
+    for (i = 0; i < 100; i++) {
+        outputStr += i;
+        var firstPass = true;
+        if (i % factor1 == 0 && factor1 > 0) {
+            if (firstPass == true) {
+                outputStr += " - ";
+                firstPass = false;
+            }
+            outputStr += phrase1;
+        }
+        if (i % factor2 == 0 && factor2 > 0) {
+            if (firstPass == true) {
+                outputStr += " - ";
+                firstPass = false;
+            }
+            outputStr += phrase2;
+        }
+        if (i % factor3 == 0 && factor3 > 0) {
+            if (firstPass == true) {
+                outputStr += " - ";
+                firstPass = false;
+            }
+            outputStr += phrase3;
+        }
+        if (i % factor4 == 0 && factor4 > 0) {
+            if (firstPass == true) {
+                outputStr += " - ";
+                firstPass = false;
+            }
+            outputStr += phrase4;
+        }
+        if (firstPass == false) {
+            outputStr += "!";
+        }
+        outputStr += "<br>";
+    }
+
+    $("#output").html(outputStr);
+
+});
