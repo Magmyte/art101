@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject</title>
+	<title>Lab 15 - AJAX</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,25 +23,27 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject</h1>
+			<h1>Lab 15 - AJAX</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>For this lab,.</p>
+					<p>For this lab, we were tasked with configuring a webpage that featured a button, which would fetch an API once clicked and display information based on the fetched API.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>I kept running into an issue where CORS policy would block AJAX from fetching the JSON from the website, and this was rather frustrating because all of the various websites I visited would run into this issue. Not even a CORS unblocker extension worked, and I didn't want to use it because I couldn't assume that anybody viewing my webpage would have that extension installed. Thus, I eventually resorted to finding a REST API that was CORS-friendly and used that as my API instead.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>I put a lot of effort into this assignment, since I'm not familiar with APIs at all, and I had a lot of issues fetching JSONs from APIs due to the CORS policy mentioned earlier. At the end of the day, I did get an API to work correctly, but it came after a lot of frustration and effort spent in order to get working.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
 					<p>Here are the results of the script output:</p>
+					<p>Activate to get a random cat!</p>
+					<button id="activate">Activate</button><br>
 					<div id="output">
 					</div>
 			</div>
